@@ -1,5 +1,5 @@
-package com.e2etests.automation.utils;
 
+package com.e2etests.automation.utils;
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;

@@ -67,9 +67,9 @@ public class Wait extends BasePage {
 	 * @param webElement
 	 * @param webElementName
 	 */
-	public void forElementToBeDisplayed(Duration timeout, WebElement webElement, String webElementName) {
+	public void forElementToBeDisplayed(Duration timeout, WebElement webElement) {
 		ExpectedCondition<WebElement> condition = ExpectedConditions.visibilityOf(webElement);
-		String timeoutMessage = webElementName + " wasn't displayed after " + timeout + " seconds.";
+		String timeoutMessage = " wasn't displayed after " + timeout + " seconds.";
 		waitUntilCondition(condition, timeoutMessage, timeout);
 	}
 
